@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+	<services>
+		<service id="Nacmartin\PhpExecJs\PhpExecJs" class="Nacmartin\PhpExecJs\PhpExecJs" />
+		<service id="Olla\React\Renderer\AppContext" class="Olla\React\Renderer\AppContext">
+			<argument type="service" id="request_stack" />
+		</service>
+		<service id="Olla\React\Renderer\PhpExecRender" class="Olla\React\Renderer\PhpExecRender">
+			<argument type="service" id="Nacmartin\PhpExecJs\PhpExecJs" />
+		</service>
+	</services>
+</container>

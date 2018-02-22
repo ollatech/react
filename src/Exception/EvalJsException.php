@@ -1,6 +1,6 @@
 <?php
 
-namespace Limenius\ReactRenderer\Exception;
+namespace Olla\React\Exception;
 
 /**
  * Class EvalJsException

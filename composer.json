@@ -1,5 +1,5 @@
 {
-    "name": "limenius/react-renderer",
+    "name": "olla/react",
     "description": "Client and Server-side React rendering",
     "type": "library",
     "keywords": ["react", "reactjs", "isomorphic", "twig"],
